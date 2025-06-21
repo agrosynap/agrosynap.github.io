@@ -3,28 +3,68 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgroSynapse</title>
+    <title>AgroSynap</title>
+    <meta name="description" content="Site oficial da AgroSynap — soluções inteligentes para o agronegócio." />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <style>
         body {
             font-family: sans-serif;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #444;
+            font-family: 'Quicksand', sans-serif;
+        }
+        p {
+            color: #555;
+            margin-bottom: 0;
+            font-size: 1.2rem;
+            font-family: 'Quicksand', sans-serif;
+            display: inline-block;
+            position: relative;
+            margin-top: -0.7rem;
+        }
+        main {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+        main img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
             height: 100vh;
-            margin: 0;
-            background: #f7f7f7;
+            object-fit: cover;
+            z-index: 0;
         }
-        h1 {
-            color: #31708f;
-        }
-        p {
-            color: #555;
+        main h1,
+        main p {
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
-<h1>🚜 AgroSynapse</h1>
-<p>Em construção...</p>
+<main>
+    <h1>
+      <div style="display: flex; align-items: center;">
+        <dotlottie-player src="https://lottie.host/82c07b50-5832-404a-8061-a27725b0366d/i5E4DeUpfQ.lottie" background="transparent" speed="1" style="width: 120px; height: 120px; margin-right: -4px;" loop autoplay></dotlottie-player>
+        <span>AgroSynap</span>
+      </div>
+    </h1>
+    <p>Semeando inovação...</p>
+    <img src="/assets/images/index.svg" alt="Campos agrícolas coloridos" role="img" />
+</main>
 </body>
 </html>
